@@ -1,6 +1,6 @@
 # esPod
 
-esPod is a portable local-audio player for podcasts and MP3s, built for ESP32-family handheld hardware and designed to remain reusable across future dedicated appliance targets.
+esPod is a portable local-audio player for podcasts and MP3s, built for ESP32-family handheld hardware and designed to remain reusable across future appliance targets.
 
 This directory is the active working space for the new embedded audio project.
 
@@ -9,6 +9,8 @@ This directory is the active working space for the new embedded audio project.
 This project intentionally starts fresh and separate from the archived TrimUI Smart Pro / Rockbox effort. The old work is preserved in the neighboring `rockbox` tree as historical reference only.
 
 The long-term goal is to build reusable embedded software for a portable local-audio player that can run across ESP32-family handheld hardware and later adapt to a dedicated appliance or CM0-based hardware target.
+
+This project is intentionally designed as reusable embedded software, not as a board-specific one-off.
 
 ## Target device
 
