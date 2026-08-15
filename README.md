@@ -94,6 +94,21 @@ Validate a prepared dataset on the host before copying it to an SD card:
 python tools/validate_device_dataset.py device-export
 ```
 
+Run the host-side contract tests from the repository root:
+
+```bash
+python -m pytest tests
+```
+
+These tests validate schema version handling, required episode identity fields,
+duplicate identity rejection, media path traversal protection, missing media,
+file-size validation, and SHA-256 checksums. They do not require an ESP32 or an
+SD card.
+
+The remaining hardware tests are intentionally deferred until the Cardputer
+arrives: SD-card mounting, file listing on FAT storage, audio output, MP3
+playback, LCD rendering, button input, and state persistence across reboots.
+
 ### Local build
 
 ```bash
