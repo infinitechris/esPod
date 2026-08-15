@@ -73,6 +73,21 @@ Then unplug and replug the board before flashing or monitoring.
 
 ## Build and validation flow
 
+### Dataset preparation
+
+`pyPodcastCatcher` exports a hardware-independent dataset with:
+
+```text
+device-export/
+	manifest.json
+	media/<podcast directory>/<episode filename>.mp3
+```
+
+Copy that directory to the SD card after the storage layer is implemented.
+The v1 contract is documented in [docs/device-dataset-v1.md](docs/device-dataset-v1.md).
+The firmware must use the manifest's stable episode identity and authoritative
+relative path rather than SQLite IDs or filename reconstruction.
+
 ### Local build
 
 ```bash
