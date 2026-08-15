@@ -88,6 +88,12 @@ The v1 contract is documented in [docs/device-dataset-v1.md](docs/device-dataset
 The firmware must use the manifest's stable episode identity and authoritative
 relative path rather than SQLite IDs or filename reconstruction.
 
+Validate a prepared dataset on the host before copying it to an SD card:
+
+```bash
+python tools/validate_device_dataset.py device-export
+```
+
 ### Local build
 
 ```bash
